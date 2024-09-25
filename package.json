@@ -1,0 +1,31 @@
+{
+  "name": "tauri-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "init:android": "tauri android init",
+    "init:ios": "tauri ios init",
+    "dev:android": "RUST_BACKTRACE=1 tauri android dev",
+    "dev:ios": "RUST_BACKTRACE=1 tauri ios dev 'iPhone 15'",
+    "build:desktop": "tauri build --target aarch64-apple-darwin"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@tauri-apps/api": ">=2.0.0-rc.5",
+    "@tauri-apps/plugin-shell": ">=2.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.9",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "@tauri-apps/cli": ">=2.0.0-rc.16"
+  }
+}
